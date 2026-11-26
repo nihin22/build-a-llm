@@ -24,7 +24,7 @@ Write the answers in your own words as you work through the steps. Each question
 *Why is reinforcement learning easier for arithmetic than for writing a good sales email?*
 
 ## Tokens
-*What I saw in step 2 (bits → bytes → tokens):*
+*What I saw in step 2 (bits → bytes → tokens):22,044 characters became 4,747 tokens which is 4.6 characters per token. 
 
 ## What my own tiny model showed (step 3)
 *Loss before/after, what the text looked like before and after training, why "The sky is…" may fail:*
