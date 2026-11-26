@@ -19,6 +19,11 @@ Write the answers in your own words as you work through the steps. Each question
 ## Base models vs. assistants
 *Why might a base model continue a customer's question instead of answering it?*
 
+- **Base model** (`SmolLM2-135M`, Completion mode): only pre-trained to continue documents. Given `What is 2+2?` it never answered 4. It continued the text as if it were a maths worksheet or forum post, e.g. *"What is 2+2? 3) I would like to know how the answer for this question was determined."*, and twice invented nonsense maths (a "geometric series" giving 1/2, and 8/7).
+- **Assistant** (`SmolLM2-135M-Instruct`, Chat mode): the same size of model, but post-trained on example conversations. It answered **4** all three times, in an assistant style. But the explanations were nonsense (the "distributive property of addition over multiplication", a "base-two system"). Post-training taught it the *format* of answering, not more knowledge.
+- **Paris list:** the base model simply continued the list (it looked like the start of a document), repeating "Arc de Triomphe" up to four times in one list. The assistant wrote "Here are the top 10…" with descriptions, but invented facts: the Arc de Triomphe "on the west bank of the Seine" honouring the "French Revolutionary War", Monet and Picasso in the Louvre, made-up heights in metres, Versailles listed twice.
+- **Business:** a customer question sent to a base model may just be continued (more questions, a web page) instead of answered. Assistant behaviour comes from post-training. Both kinds of model can sound confident while being wrong, especially small ones.
+
 ## Hallucinations
 *Why might a model confidently invent a supplier's history or a source for a business claim?*
 
