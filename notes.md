@@ -5,16 +5,16 @@ Write the answers in your own words as you work through the steps. Each question
 ## Training data
 *How could a model's training data affect its market analysis?*
 
-- Træningsdata er almindelig tekst fra internettet (FineWeb). Mine 10 dokumenter var en tilfældig blanding: et forum om sæbeopera, medicinsk forskning, en restaurantinspektion, sportsnyheder, Kraft/Cadbury-chokolade. Der var også fejl i dem, f.eks. et ødelagt tegn (`�`).
-- En model kan kun det, dens træningsdata indeholder. Min model kunne slet ikke læse "sky", fordi ordet ikke stod i teksterne (trin 3).
-- **Erhverv:** træningsdata beskriver fortiden, frem til modellens "knowledge cutoff". En markedsanalyse fra modellens hukommelse kender ikke ændringer efter træningen (nye konkurrenter, priser, regler), og den afspejler det, der står meget om på internettet, ikke nødvendigvis det, der er rigtigt for netop vores marked. Aktuelle tal skal gives til modellen i konteksten.
+- Training data is ordinary text from the internet (FineWeb). My 10 documents were a random mix: a soap-opera forum, medical research, a restaurant inspection, sports news, Kraft/Cadbury chocolate. They also contained errors, such as a broken character (`�`).
+- A model only knows what its training data contains. My model could not even read "sky", because the word never appeared in the documents (step 3).
+- **Business:** training data describes the past, up to the model's knowledge cutoff. A market analysis from the model's memory does not know about changes after training (new competitors, prices, regulation), and it reflects what is written a lot about on the internet, not necessarily what is true for our specific market. Current figures must be given to the model in the context.
 
 ## Training vs. inference
 *Does uploading a company report change the model's weights?*
 
-- **Træning** = vægtene ændres. I `train.py` blev modellens vægte justeret 1.484 gange på ca. 60 sekunder, hver gang den gættede forkert, og loss faldt fra 7,7 til 0,09. Resultatet blev gemt i `tiny_gpt.pt`.
-- **Inferens** = modellen bruges, og vægtene ændres ikke. `sky_completions.py` og `corpus_completions.py` indlæste `tiny_gpt.pt` og genererede tekst, men ændrede ikke filen.
-- **Erhverv:** nej. At uploade en årsrapport til ChatGPT er inferens: rapporten lægges i konteksten for netop dette svar, men modellen lærer den ikke permanent. I en ny samtale er den væk.
+- **Training** = the weights change. In `train.py` the model's weights were adjusted 1,484 times in about 60 seconds, each time it guessed wrong, and the loss fell from 7.7 to 0.09. The result was saved in `tiny_gpt.pt`.
+- **Inference** = the model is used and the weights do not change. `sky_completions.py` and `corpus_completions.py` loaded `tiny_gpt.pt` and generated text, but did not change the file.
+- **Business:** no. Uploading an annual report to ChatGPT is inference: the report is put in the context for that answer, but the model does not learn it permanently. In a new conversation it is gone.
 
 ## Base models vs. assistants
 *Why might a base model continue a customer's question instead of answering it?*
@@ -34,20 +34,20 @@ Write the answers in your own words as you work through the steps. Each question
 ## Tokens
 *What I saw in step 2 (bits → bytes → tokens):*
 
-22,044 characters became 4,747 tokens which is 4.6 characters per token.
+22,044 characters became 4,747 tokens, which is 4.6 characters per token.
 
-- **Tekst → bytes → bits:** computeren gemmer tekst som tal. `|Viewing Single Post From: Spoilers for the Week of February 11th|` er 66 tegn = 66 bytes (tal fra 0–255, f.eks. `|` = 124, `V` = 86) = 528 bits (0 og 1).
-- **Tokens:** en LLM læser hverken bogstaver eller bytes, men tokens, dvs. stykker af tekst med et nummer. GPT-4o har ca. 200.000 forskellige tokens. Almindelige ord er ét token (` the`), sjældne ord deles i flere.
-- **Chat-tokens:** 16 af mine 4.747 tokens var ikke min tekst, men Tiktokenizers chat-indpakning: `<|im_start|>system … You are a helpful assistant <|im_end|><|im_start|>user …` og til sidst `<|im_start|>assistant`. Sådan ser en assistent en samtale: specielle tokens markerer, hvem der taler, og til sidst står der "assistant", så modellen fortsætter som assistenten. Selve korpusset var 4.731 tokens.
-- **Erhverv:** pris, hastighed og grænsen for kontekstvinduet måles i tokens. En lang rapport koster flere tokens og kan fylde konteksten op.
+- **Text → bytes → bits:** computers store text as numbers. `|Viewing Single Post From: Spoilers for the Week of February 11th|` is 66 characters = 66 bytes (numbers from 0 to 255, e.g. `|` = 124, `V` = 86) = 528 bits (0s and 1s).
+- **Tokens:** an LLM reads neither letters nor bytes but tokens: pieces of text, each with a number. GPT-4o has about 200,000 different tokens. Common words are one token (` the`); rare words are split into several.
+- **Chat tokens:** 16 of my 4,747 tokens were not my text but Tiktokenizer's chat wrapper: `<|im_start|>system … You are a helpful assistant <|im_end|><|im_start|>user …` and at the end `<|im_start|>assistant`. This is how an assistant sees a conversation: special tokens mark who is speaking, and the last one says "assistant", so the model continues as the assistant. The corpus itself was 4,731 tokens.
+- **Business:** price, speed and the context-window limit are all measured in tokens. A long report costs more tokens and can fill up the context.
 
 ## What my own tiny model showed (step 3)
 *Loss before/after, what the text looked like before and after training, why "The sky is…" may fail:*
 
-- **Model:** en lille transformer (2 lag, 4 attention heads) med tilfældige vægte, trænet i ca. 60 sekunder på min CPU til at gætte næste token. Den brugte kun de ca. 2.000 forskellige tokens, der findes i mit korpus, ikke alle 200.000.
-- **Loss** (hvor forkert den gætter): 7,71 → 4,35 (step 50) → 1,76 (step 100) → 0,39 (step 200) → **0,09** (step 1.484). 7,7 svarer til rent gætteri blandt ca. 2.000 tokens.
-- **Før træning:** ordsalat, *"The focused received restrict SHARE nothing retail freshans vegetables…"*
-- **Efter træning:** *"The UK product would be positioned as a snack. "The breakfast market in countries such as Germany is more developed…"*. Den sætning står **ord for ord** i Kraft/Cadbury-dokumentet. Modellen har lært teksterne **udenad** i stedet for at lære sprog, fordi den kun havde 4.731 tokens. Rigtige LLM'er træner på billioner af tokens, så de må lære generelle mønstre (men kan stadig gentage træningstekst).
-- **"The sky is…" fejlede:** ` sky` findes ikke i mine 10 dokumenter, så modellen har intet nummer for det og kan ikke læse ordet.
-- **100 fortsættelser af "The exchange's retail…":** 68 af 100 var den samme sætning, kopieret fra teksten. Resten sprang over i andre dokumenter midt i sætningen, f.eks. *"…represents 85% of the chocolate spread market. Kraft Foods…"*. Modellen ved, hvilke ord der plejer at følge efter hinanden, men ikke hvad teksten handler om. Det lyder flydende, men det er sat forkert sammen, og det er grundlaget for hallucinationer.
-- **Hvorfor forskellige svar fra samme model?** Næste token **trækkes tilfældigt** ud fra sandsynligheder, med et nyt seed hver gang. Derfor kan ChatGPT svare forskelligt på samme spørgsmål.
+- **Model:** a tiny transformer (2 layers, 4 attention heads) with random weights, trained for about 60 seconds on my CPU to guess the next token. It only used the roughly 2,000 distinct tokens in my corpus, not all 200,000.
+- **Loss** (how wrong its guesses are): 7.71 → 4.35 (step 50) → 1.76 (step 100) → 0.39 (step 200) → **0.09** (step 1,484). 7.7 is about what pure guessing among ~2,000 tokens gives.
+- **Before training:** word salad, *"The focused received restrict SHARE nothing retail freshans vegetables…"*
+- **After training:** *"The UK product would be positioned as a snack. "The breakfast market in countries such as Germany is more developed…"*. That sentence appears **word for word** in the Kraft/Cadbury document. The model **memorised** the texts instead of learning language, because it only had 4,731 tokens. Real LLMs train on trillions of tokens, so they must learn general patterns (but can still repeat training text).
+- **"The sky is…" failed:** ` sky` does not occur in my 10 documents, so the model has no number for it and cannot read the word.
+- **100 completions of "The exchange's retail…":** 68 of 100 were the same sentence, copied from the text. The rest jumped into other documents mid-sentence, e.g. *"…represents 85% of the chocolate spread market. Kraft Foods…"*. The model knows which words usually follow each other, but not what the text is about. It sounds fluent but is put together wrongly, which is the basis of hallucinations.
+- **Why different answers from the same model?** The next token is **drawn at random** from probabilities, with a new seed each time. That is why ChatGPT can answer the same question differently.
