@@ -1,0 +1,104 @@
+Chosen sentence (appears exactly in fineweb_corpus.txt): The exchange's retail membership represents 85% of U.S.
+Beginning: "The exchange's retail"
+100 completions of 20 tokens, seeds 0-99
+
+  1. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+  2. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+  3. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+  4. The exchange's retail membership represents 85% of recalls were submitted to the RRE at the U Connect Live conference here
+  5. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+  6. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+  7. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+  8. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+  9. The exchange's retail membership represents 85% of the U Connect Live session that the chain is “disappointed” in
+ 10. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 11. The exchange's retail membership represents 85% of the Vikings finish in a time of 26:01 or faster.
+ 12. The exchange's retail membership represents 415 points. Bowman led the way for Augustana with with with a fourth place finish
+ 13. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 14. The exchange's retail membership represents 2m in sales since its October 2010 launch and has a 6.
+ 15. The exchange's retail membership represents 85% of the exchange, including Kroger, Wegmans and Wakefern, have
+ 16. The exchange's retail membership represents 85% of the July 10m marketing manager Bruce Newman said: “The UK
+ 17. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 18. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 19. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 20. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 21. The exchange's retail membership represents  state of the 3, finish in a time of 26:01 or faster
+ 22. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 23. The exchange's retail membership represents 85% of the exchange industrywide since its September 2009 launch. For recalls
+ 24. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 25. The exchange's retail membership represents 120g four-pack of mini tubs, both with an rsp of £10m in
+ 26. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 27. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 28. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 29. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 30. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 31. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 32. The exchange's retail membership represents 85% of the launch and Conference here. The Vikings to a 6% value
+ 33. The exchange's retail membership represents 2009 Oncology Conference of U.S. grocery volume — including 21 of the 
+ 34. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 35. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 36. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 37. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 38. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 39. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 40. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 41. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 42. The exchange's retail membership represents 85% of the U Connect Live session that the chain is “disappointed” in
+ 43. The exchange's retail membership represents 2) Documentation that employees have been instructed of their responsibility to report symptoms of, you
+ 44. The exchange's retail membership represents 160g tub and a 120g four-pack of mini tubs, both with an
+ 45. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 46. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 47. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 48. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 49. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 50. The exchange's retail membership represents 85% of the new Philadelphia with Cadbury chocolate. Kraft believes the new product has
+ 51. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 52. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 53. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 54. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 55. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 56. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 57. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 58. The exchange's retail membership represents 85% of the exchange industrywide since its September 2009 launch. For recalls
+ 59. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 60. The exchange's retail membership represents 85% of the chocolate spread market. Kraft Foods UK marketing manager Bruce Newman said:
+ 61. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 62. The exchange's retail membership represents 85% of the chocolate spread market. Kraft Foods UK marketing manager Bruce Newman said:
+ 63. The exchange's retail membership represents 85% of the Cadbury chocolate brand in a new direction, by combining it with
+ 64. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 65. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 66. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 67. The exchange's retail membership represents 85% of the RRE. grocery volume — including 21 of the new product
+ 68. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 69. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 70. The exchange's retail membership represents 85% of the second bin in the meantime. - Put in the meantime. -
+ 71. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 72. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 73. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 74. The exchange's retail membership represents 85% of the exchange industrywide since its September 2009 launch and has a
+ 75. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 76. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 77. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 78. The exchange's retail membership represents  Patients and he said, adding that included a society that places great value on Google Video
+ 79. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 80. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 81. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 82. The exchange's retail membership represents 85% of the RRE. Bowman this inspection, the exchange industrywide since its
+ 83. The exchange's retail membership represents 160g tub and a 120g four-pack of mini tubs, both with an
+ 84. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 85. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 86. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 87. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 88. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 89. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 90. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 91. The exchange's retail membership represents 2) - bean sprouts to retailer and spring rolls.| Except when washing fruits and vegetables
+ 92. The exchange's retail membership represents 65 recalls have been issued through the second Local blocked by a couple of 2)
+ 93. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 94. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 95. The exchange's retail membership represents 8-unit apartment building in Oakland, CA have separate caged stalls for eight separate trash
+ 96. The exchange's retail membership represents 85% of the exchange, including Kroger, Wegmans and Wakefern, have
+ 97. The exchange's retail membership represents 85% of the RRE. The RRE was created by FMI and GS1
+ 98. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+ 99. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest
+100. The exchange's retail membership represents 85% of the July 10m in the state of sales in the first year
